@@ -3,17 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site en Maintenance</title>
+    <title>DSL Conseil - Maintenance</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f4f4; color: #333; }
-        .container { text-align: center; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #0070f3; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f172a; /* Fond bleu nuit pro */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+        }
+        .logo {
+            width: 350px; /* Logo assez grand comme demandé */
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        .contact-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .contact-link {
+            display: block;
+            color: #38bdf8; /* Bleu clair pour les liens */
+            text-decoration: none;
+            font-size: 1.3rem;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .contact-link:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        .label {
+            display: block;
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>🚧 Site en maintenance</h1>
-        <p>Nous préparons quelque chose de nouveau. Revenez bientôt !</p>
+        <!-- LOGO -->
+        <img src="https://res.cloudinary.com/dbt3szwug/image/upload/v1773330901/dsl-logo-white-png_ebvymo.png" alt="DSL Conseil Logo" class="logo">
+
+        <h1>Site en maintenance</h1>
+        <p>Notre nouvelle plateforme est en cours de préparation.</p>
+
+        <div class="contact-box">
+            <div>
+                <span class="label">Email</span>
+                <a href="mailto:contact@dsl-conseil.mg" class="contact-link">contact@dsl-conseil.mg</a>
+            </div>
+            
+            <div style="margin-top: 25px;">
+                <span class="label">Téléphone</span>
+                <a href="tel:+261373007221" class="contact-link">+261 37 300 72 21</a>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
